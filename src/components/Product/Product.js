@@ -8,7 +8,8 @@ const Product = (props) => {
             <img src={img} alt=''></img>
             <p><strong>Name:</strong>{name}</p>
             <p><strong>Price:</strong> ${price}</p>
-            <p><strong>Ratings:</strong>{ratings}</p>
+            <h5><strong>Ratings:</strong>{ratings}</h5>
+            <button onClick={()=>props.handleCart(props.product)} className='button'>Add to cart</button>
         </div>
     );
 };
